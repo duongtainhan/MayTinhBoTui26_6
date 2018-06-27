@@ -7,10 +7,72 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Máy tính bỏ túi"
-        android:textSize="30dp"
-        />
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:id="@+id/tvMTBT"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvMTBT"
+        android:layout_marginTop="20dp"
+        android:hint="Nhập số thứ nhất"
+        android:id="@+id/edTxt1"
+        android:textSize="25sp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edTxt1"
+        android:layout_marginTop="20dp"
+        android:hint="Nhập số thứ hai"
+        android:id="@+id/edTxt2"
+        android:textSize="25sp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edTxt2"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="60dp"
+        android:text="+"
+        android:textSize="30sp"
+        android:id="@+id/btnCong"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edTxt2"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="60dp"
+        android:layout_alignParentRight="true"
+        android:text="-"
+        android:textSize="30sp"
+        android:id="@+id/btnTru"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnCong"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="60dp"
+        android:text="*"
+        android:textSize="30sp"
+        android:id="@+id/btnNhan"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnTru"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="60dp"
+        android:layout_alignParentRight="true"
+        android:text="/"
+        android:textSize="30sp"
+        android:id="@+id/btnChia"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnNhan"
+        android:layout_marginTop="30dp"
+        android:textSize="30sp"/>
 
 </RelativeLayout>
