@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
                 String number1 = edTxt1.getText().toString();
                 String number2 = edTxt2.getText().toString();
 
-                if(!number1.equals("") || !number2.equals(""))
+                if(!number1.equals("") && !number2.equals(""))
                 {
                     int ketqua = Integer.parseInt(number1) + Integer.parseInt(number2);
                     txtKetQua.setText(String.valueOf(ketqua));
@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
                 String number1 = edTxt1.getText().toString();
                 String number2 = edTxt2.getText().toString();
 
-                if(!number1.equals("") || !number2.equals(""))
+                if(!number1.equals("") && !number2.equals(""))
                 {
                     int ketqua = Integer.parseInt(number1) - Integer.parseInt(number2);
                     txtKetQua.setText(String.valueOf(ketqua));
@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
                 String number1 = edTxt1.getText().toString();
                 String number2 = edTxt2.getText().toString();
 
-                if(!number1.equals("") || !number2.equals(""))
+                if(!number1.equals("") && !number2.equals(""))
                 {
                     int ketqua = Integer.parseInt(number1) * Integer.parseInt(number2);
                     txtKetQua.setText(String.valueOf(ketqua));
@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
                 String number1 = edTxt1.getText().toString();
                 String number2 = edTxt2.getText().toString();
 
-                if((!number1.equals("") || !number2.equals("")) && Integer.parseInt(number2)!=0)
+                if((!number1.equals("") && !number2.equals("")) && Integer.parseInt(number2)!=0)
                 {
                     int ketqua = Integer.parseInt(number1) / Integer.parseInt(number2);
                     txtKetQua.setText(String.valueOf(ketqua));
