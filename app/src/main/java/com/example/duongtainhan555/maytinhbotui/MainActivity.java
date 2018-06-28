@@ -40,5 +40,47 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+        btnTru.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String number1 = edTxt1.getText().toString();
+                String number2 = edTxt2.getText().toString();
+
+                if(!number1.equals("") || !number2.equals(""))
+                {
+                    int ketqua = Integer.parseInt(number1) - Integer.parseInt(number2);
+                    txtKetQua.setText(String.valueOf(ketqua));
+                }
+
+            }
+        });
+        btnNhan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String number1 = edTxt1.getText().toString();
+                String number2 = edTxt2.getText().toString();
+
+                if(!number1.equals("") || !number2.equals(""))
+                {
+                    int ketqua = Integer.parseInt(number1) * Integer.parseInt(number2);
+                    txtKetQua.setText(String.valueOf(ketqua));
+                }
+
+            }
+        });
+        btnChia.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String number1 = edTxt1.getText().toString();
+                String number2 = edTxt2.getText().toString();
+
+                if((!number1.equals("") || !number2.equals("")) && Integer.parseInt(number2)!=0)
+                {
+                    int ketqua = Integer.parseInt(number1) / Integer.parseInt(number2);
+                    txtKetQua.setText(String.valueOf(ketqua));
+                }
+
+            }
+        });
     }
 }
